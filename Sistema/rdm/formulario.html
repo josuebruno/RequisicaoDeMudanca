@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    
+    <link href="css/entradascss.css" rel="stylesheet">
+
+    <title>RDM</title>
+  </head>
+
+        <body>
+
+
+
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                <a class="navbar-brand mr-auto mr-lg-0" href="#">RDM - IPEA</a>
+                <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+          
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                  <ul class="navbar-nav mr-auto ">
+                    
+                    
+                    <li class="nav-item">
+                        
+                    </li>
+                    
+                    
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">Sair</button>
+                  </form>
+                </div>
+              </nav>
+
+<!--   bloco -->
+
+
+<div class="container">
+  <div class="py-5 text-center">
+    
+    <h2>Nova RDM</h2>
+
+  </div>
+
+  <div class="row">
+
+   
+
+    <div class="col-md-12 ">
+      
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="titulodardm">Titulo da RDM</label>
+            <input type="text" class="form-control" id="titulodardm" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              É obrigatório inserir um titulo.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="tipo">Tipo</label>
+            <select class="form-control" id="tipo">
+              <option>Pequeno</option>
+              <option>Medio</option>
+              <option>Grande</option>
+            </select>
+            
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="nickname">Motivo da Mudança</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">#</span>
+            </div>
+            <textarea class="form-control" id="motivodamudanca" rows="3" required></textarea>
+            <div class="invalid-feedback" style="width: 100%;">
+              O motivo da mudança e obrigatorio.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Outros Motivos: <span class="text-muted">(Opcional)</span></label>
+          <input type="text" class="form-control" id="email" >
+          
+        </div>
+
+        <div class="mb-3">
+          <label for="endereco">Item(ns) de Configuração(ões):</label>
+          <input type="text" class="form-control" id="ic" required>
+          <div class="invalid-feedback">
+            Por favor, insira os ICS.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="endereco2">Equipes Envolvidas Diretamente:
+          <span class="text-muted">(Opcional)</span></label>
+          <input type="text" class="form-control" id="equipesenvolvidas" >
+        </div>
+
+        <div class="mb-3">
+          <label for="nickname">Efeito de Não Implantação: </label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">#</span>
+            </div>
+            <textarea class="form-control" id="efeitodenaoimplantar" rows="3" required></textarea>
+            <div class="invalid-feedback" style="width: 100%;">
+              O efeito de não implantar e obrigatorio.
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="d-block my-3">
+          <label for="nickname">Prioridade: </label>
+          <div class="custom-control custom-radio">
+            <input id="credito" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credito">Normal</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debito" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debito">Media</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">Alta</label>
+          </div>
+        </div>
+        
+        <div class="mb-3">
+          <label for="nickname">Plano de retorno ao ambiente original (rollback): </label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">#</span>
+            </div>
+            <textarea class="form-control" id="efeitodenaoimplantar" rows="3" required></textarea>
+            <div class="invalid-feedback" style="width: 100%;">
+              O Plano de rollback é obrigatorio.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="titulodardm">Usuario Solicitante</label>
+              <input type="text" class="form-control" id="titulodardm" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                É obrigatório inserir um titulo.
+              </div>
+            </div>
+          
+
+          <div class="col-md-6 mb-3">
+
+            <label for="tipo">Equipe solicitante</label>
+            <select class="form-control" id="tipo">
+              <option>Linux e segurança</option>
+              <option>Windows e exchange</option>
+              <option>Banco de Dados</option>
+              <option>Desenvolvimento</option>
+              <option>Infraestrtura</option>
+              <option>Voip</option>
+            </select>
+            
+          </div>
+
+        <div class="col-md-6 mb-3">
+
+          <label for="tipo">Acordo de Nivel de Serviço</label>
+          <select class="form-control" id="tipo">
+            <option>menos de 1 hora</option>
+            <option>mais de 1 hora</option>
+            <option>mais de 2 horas</option>
+            <option>mais de 3 horas</option>
+            <option>mais de 4 horas</option>
+            <option>1 dia ou mais </option>
+          </select>
+          
+        </div>
+
+
+        <div class="col-md-6 mb-3">
+
+          <label for="tipo">Quantidade de Dias para Homologação: </label>
+          <select class="form-control" id="tipo">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option> > 20 </option>
+          </select>
+          
+        </div>
+
+        <div class="col-md-6 mb-3">
+
+          <label for="tipo">Quantidade de Dias para Impçantação: </label>
+          <select class="form-control" id="tipo">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option> > 20 </option>
+          </select>
+          
+        </div>
+
+        <div class="col-md-6 mb-3">
+
+          <label for="tipo">Depende de Outra Rdm </label>
+          <select class="form-control" id="tipo">
+            
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option> > 20 </option>
+
+          </select>
+          
+        </div>
+
+        <div class="col-md-6 mb-3">
+
+          <label for="tipo">É uma RFC que foi criada para atender a outra RFC:
+          </label>
+          <select class="form-control" id="tipo">
+            
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option> > 20 </option>
+
+          </select>
+
+          
+          
+        </div>
+        <div class="col-md-6 mb-3">
+
+          <label for="tipo">Compreensão da demanda: dificuldade para compreender a mudança;
+          </label>
+          <select class="form-control" id="tipo">
+            
+            <option>Pouco Complexa</option>
+            <option>Medianamente complexa</option>
+            <option>Muito complexa</option>
+            
+          </select>
+
+          
+          
+        </div>
+
+        <div class="col-md-6 mb-3">
+
+          <label for="tipo">Integração: Necessidade de integrar a mudança que está sendo construída com outros
+            produtos já existentes.
+          </label>
+          <select class="form-control" id="tipo">
+            
+            <option>Pouco Complexa</option>
+            <option>Medianamente complexa</option>
+            <option>Muito complexa</option>
+            
+          </select>
+
+          
+          
+        </div>
+
+        <div class="col-md-6 mb-3">
+
+          <label for="tipo" title="    acordo com a quantidade de trabalho, volume de itens que deverão ser alterados etestados, comprometimento de outras áreas com a mudança, complexidade funcional,etc.">Construção: dificuldade para efetuar a construção da mudança solicitada. Ponderar
+          </label>
+          <select class="form-control" id="tipo">
+            
+            <option>Pouco Complexa</option>
+            <option>Medianamente complexa</option>
+            <option>Muito complexa</option>
+            
+          </select>
+
+          
+          
+        </div>
+ 
+
+        <div class="col-md-6 mb-3">
+
+          <label for="tipo">Dificuldade estimada na implantação em produção
+          </label>
+          <select class="form-control" id="tipo">
+            
+            <option>Implantação pauco complexa.</option>
+            <option>Implantação medianamente complexa.</option>
+            <option>Implantação muito complexa.</option>
+            
+          </select>
+
+          
+          
+        </div>
+        
+        <div class="col-md-6 mb-3">
+
+          <label for="tipo">Após a mudança é possível testar as alterações?
+          </label>
+          <select class="form-control" id="tipo">
+            
+            <option>Sim</option>
+            <option>Sim em partes</option>
+            <option>Não</option>
+            
+          </select>
+
+          
+          
+        </div>
+        </div>
+        <div class="mb-3">
+          <label for="endereco">Do que foi modificado como você classificaria a capacidade de verificação em produção
+            sem que isto gere impacto adicional aos usuários ou ao processo de implantação?</label>
+          <input type="text" class="form-control" id="ic" required>
+          <div class="invalid-feedback">
+            Por favor, insira os ICS.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="endereco">Após a implantação da mudança será possível verificar se as alterações estão
+            funcionando adequadamente no ambiente de produção?
+            </label>
+          <input type="text" class="form-control" id="ic" required>
+          <div class="invalid-feedback">
+            Por favor, insira os ICS.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="endereco">Em quanto tempo este retorno poderia ser?
+            </label>
+          <input type="text" class="form-control" id="ic" required>
+          <div class="invalid-feedback">
+            Por favor, insira os ICS.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="endereco">De que forma esta mudança afeta o serviço caso apresente algum problema em
+            produção?
+            </label>
+          <input type="text" class="form-control" id="ic" required>
+          <div class="invalid-feedback">
+            Por favor, insira os ICS.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="endereco">Esta mudança afeta algum outro serviço?
+          </label>
+          <input type="text" class="form-control" id="ic" required>
+          <div class="invalid-feedback">
+            Por favor, insira os ICS.
+          </div>
+        </div>
+        
+        
+        <hr class="col-md-4 mb-3">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Solicitar</button>
+      </form>
+    </div>
+  </div>
+
+          
+</div>
+
+
+
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+  
+  <p class="mb-1">&copy; 2022 - Josue Bruno</p>
+  <ul class="list-inline">
+    <li class="list-inline-item"><a href="#">Privacidade</a></li>
+    <li class="list-inline-item"><a href="#">Termos</a></li>
+    <li class="list-inline-item"><a href="#">Suporte</a></li>
+  </ul>
+  
+</footer>
+
+<!-- Principal JavaScript do Bootstrap
+================================================== -->
+<!-- Foi colocado no final para a página carregar mais rápido -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/vendor/holder.min.js"></script>
+<script>
+  // Exemplo de JavaScript para desativar o envio do formulário, se tiver algum campo inválido.
+  (function() {
+    'use strict';
+
+    window.addEventListener('load', function() {
+      // Selecione todos os campos que nós queremos aplicar estilos Bootstrap de validação customizados.
+      var forms = document.getElementsByClassName('needs-validation');
+
+      // Faz um loop neles e previne envio
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
+
+
+
+
+
+
+<!--  fim do bloco -->
+        </body>
+      
+  </html>
