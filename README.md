@@ -1,2 +1,3 @@
 # RequisicaoDeMudanca
- Sistema para genrenciar mudaças de TI.
+ 
+ Objetivo: Sistema para genrenciar requisições de mudança.  
